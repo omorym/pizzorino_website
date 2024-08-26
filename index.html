@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Press+Start+2P&display=swap");
+      * {
+        font-family: "Press Start 2P", system-ui;
+        font-size: 12px;
+        text-align: center;
+      }
+      ul {
+        list-style-type: none;
+        list-style: none;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 15px;
+      }
+      nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .recipe-section {
+        display: flex;
+        flex-direction: column;
+        /* display: grid; */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      .recipe-box {
+        width: 23%;
+        min-width: 250px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        background-color: #f9f9f9;
+        /* margin: 10px; */
+      }
+      .recipe-box h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      .recipe-box ul {
+        padding: 0;
+      }
+      nav {
+        background-color: #f1f1f1;
+        padding: 20px;
+        border-bottom: 1px solid #ddd;
+      }
+      .recipe-box ul li {
+        text-align: left;
+        margin-bottom: 5px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #007bff;
+        font-size: 14px;
+      }
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+      .contact-section {
+        max-width: 250px;
+        margin: 40px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        background-color: #f9f9f9;
+      }
+      .contact-section h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .contact-section form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .contact-section label {
+        text-align: left;
+        font-weight: bold;
+      }
+      .contact-section input {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+      .contact-section button {
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+      .contact-section button:hover {
+        background-color: #0056b3;
+      }
+      footer {
+        margin-top: 40px;
+        padding: 20px;
+        background-color: #f1f1f1;
+        text-align: center;
+        border-top: 1px solid #ddd;
+      }
+      footer p {
+        margin: 10px 0;
+      }
+      footer .social-media {
+        margin: 10px 0;
+      }
+      footer .social-media a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #007bff;
+        font-size: 14px;
+      }
+      footer .social-media a:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <header>
+      <img src="./latest.png" height="100px" />
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h1>Welcome to Pizzorino</h1>
+      <p>
+        Where the best pizzas in town <br />
+        are made with love and passion.<br />
+        Enjoy our special Krabby pizzas,<br />
+        freshly baked and deliciously prepared <br />
+        by no one other than Spong bob !!.
+      </p>
+      <img src="./latest (1).png" alt="Pizzorino Shop Image" height="200px" />
+    </section>
+    <section class="section" id="about">
+      <h2>About Pizzorino</h2>
+      <p>
+        At Pizzorino, we believe that <br />
+        great pizza is a combination of the <br />
+        finest ingredients, a passion for cooking, <br />
+        and a love for sharing.
+      </p>
+      <img
+        src="./107634500_10157172422721366_7346255672459857214_n.jpg"
+        height="100px"
+        alt="Pizzorino Staff Image"
+      />
+      <img src="./image-bcac097b6cd016c2b376d9e439d472e0.jpg" height="100px" />
+      <ul>
+        <li>Family-Owned Business</li>
+        <li>100% Fresh Ingredients</li>
+        <li>Traditional Pizza Making</li>
+        <li>Friendly and Skilled Staff</li>
+      </ul>
+    </section>
+
+    <section class="recipe-section">
+      <h1 style="font-size: 24px"><b>Our Recipes</b></h1>
+      <div class="recipe-box">
+        <h3>Krabby Meat Lover</h3>
+        <ul>
+          <li>Base: BBQ Sauce</li>
+          <li>Toppings: Mozzarella, Bacon, Ham, Sausage, Ground Beef</li>
+          <li>Special: Caramelized Onions</li>
+        </ul>
+      </div>
+      <div class="recipe-box">
+        <h3>Krabby Seafood</h3>
+        <ul>
+          <li>Base: Alfredo Sauce</li>
+          <li>Toppings: Mozzarella, Shrimp, Crab Meat, Clams</li>
+          <li>Special: Fresh Basil</li>
+        </ul>
+      </div>
+      <div class="recipe-box">
+        <h3>Krabby Deluxe</h3>
+        <ul>
+          <li>Base: Classic Tomato Sauce</li>
+          <li>Toppings: Mozzarella, Pepperoni, Sausage, Mushrooms</li>
+          <li>Special: Garlic Butter Crust</li>
+        </ul>
+      </div>
+      <div class="recipe-box">
+        <h3>Krabby Spicy Inferno</h3>
+        <ul>
+          <li>Base: Spicy Marinara Sauce</li>
+          <li>Toppings: Mozzarella, Jalapeños, Spicy Sausage, Red Onions</li>
+          <li>Special: Crushed Red Pepper Flakes</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <h2>Contact Pizzorino</h2>
+      <form action="#">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2024 Pizzorino. All rights reserved.</p>
+      <p>Follow us on:</p>
+      <div class="social-media">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </div>
+      <p>Phone: +1 (555) 123-4567</p>
+    </footer>
+  </body>
+</html>
